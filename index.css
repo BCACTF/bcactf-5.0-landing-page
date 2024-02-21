@@ -19,8 +19,8 @@ body {
     color: #a0f4f7;
     text-align: center;
     margin: 0;
-    text-shadow: 1px 1px 10px #a0f4f7, 1px 1px 10px #38bbd2;
     margin-top: 15px;
+    animation: pulse 5s infinite alternate forwards ease-in-out;
 }
 
 img {
@@ -76,4 +76,18 @@ img {
     font-size: 2rem;
     margin: 0;
     text-decoration: underline;
+}
+
+@keyframes pulse {
+    0% {
+        text-shadow: 1px 1px 5px #a0f4f7, 1px 1px 5px #38bbd2;
+    }
+
+    50% {
+        text-shadow: 1px 1px 15px #a0f4f7, 1px 1px 15px #38bbd2;
+    }
+
+    100% {
+        text-shadow: 1px 1px 5px #a0f4f7, 1px 1px 5px #38bbd2;
+    }
 }
