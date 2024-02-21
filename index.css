@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(to bottom, #5DE0E6, #004AAD);
+    font-family: Biko, sans-serif;
+}
+
+.ocean {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom right, #00000070, #00000000);
+    z-index: -1;
+    position: absolute;
+}
+
+.bubble-text {
+    font-size: 5em;
+    color: #a0f4f7;
+    text-align: center;
+    margin: 0;
+    text-shadow: 1px 1px 10px #a0f4f7, 1px 1px 10px #38bbd2;
+    margin-top: 15px;
+}
+
+img {
+    width: 20vw;
+    margin: auto 0;
+    display: block;
+    padding-left: 2vw;
+}
+
+.img-holder {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date {
+    font-family: "carbon-phyber", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #204079;
+    font-size: 3em;
+    text-shadow: 1px 1px 2px rgb(0, 7, 32);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact,
+.sponser {
+    text-align: center;
+    font-family: "carbon-phyber", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact h1,
+.sponser h1 {
+    color: #163160;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.contact h3,
+.sponser h3 {
+    color: #33C8FF;
+    font-size: 2rem;
+    margin: 0;
+    text-decoration: underline;
+}
