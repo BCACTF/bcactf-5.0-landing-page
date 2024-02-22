@@ -1,12 +1,14 @@
 body {
     margin: 0;
-    height: 100vh;
+    height: 130vh;
+    background-repeat: no-repeat;
     background: linear-gradient(to bottom, #5DE0E6, #004AAD);
     font-family: Biko, sans-serif;
+    background-size: contain;
 }
 
 .ocean {
-    height: 100vh;
+    height: 130vh;
     width: 100vw;
     background: linear-gradient(to bottom right, #00000070, #00000000);
     z-index: -1;
@@ -31,7 +33,7 @@ img {
 
 .img-holder {
     width: 100%;
-    padding-top: 30px;
+    padding-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,6 +51,10 @@ img {
     text-shadow: 1px 1px 2px rgb(0, 7, 32);
 }
 
+.timer {
+    color: #cef1ec;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -63,9 +69,10 @@ img {
 .sponsor h1 {
     font-family: "interstate", sans-serif;
     font-style: normal;
-    color: #150ee7;
+    color: #4d180e;
     text-decoration: underline;
-    text-shadow: 1px 1px 2px #2859b3;;
+        text-shadow: 1px 1px 1px rgb(0, 7, 32);
+    /* text-shadow: 1px 1px 3px #2859b3; */
     font-size: 2rem;
 }
 
