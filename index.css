@@ -100,10 +100,6 @@ img {
     z-index: -1;
 }
 
-html {
-    overflow: hidden;
-}
-
 @keyframes pulse {
     0% {
         text-shadow: 1px 1px 5px #a0f4f7, 1px 1px 5px #38bbd2;
