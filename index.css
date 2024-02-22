@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    overflow: hidden;
     height: 100vh;
     background: linear-gradient(to bottom, #5DE0E6, #004AAD);
     font-family: Biko, sans-serif;
@@ -39,14 +38,14 @@ img {
 }
 
 .date {
-    font-family: "carbon-phyber", sans-serif;
+    font-family: "Anta", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: center;
     margin-top: 0;
     margin-bottom: 5px;
-    color: #204079;
-    font-size: 3em;
+    color: #4d180e;
+    font-size: 2rem;
     text-shadow: 1px 1px 2px rgb(0, 7, 32);
 }
 
@@ -56,26 +55,28 @@ img {
 }
 
 .contact,
-.sponser {
+.sponsor {
     text-align: center;
-    font-family: "carbon-phyber", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 .contact h1,
-.sponser h1 {
-    color: #163160;
-    font-size: 3rem;
-    margin-bottom: 0;
+.sponsor h1 {
+    font-family: "interstate", sans-serif;
+    font-style: normal;
+    color: #150ee7;
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px #2859b3;;
+    font-size: 2rem;
 }
 
-.contact h3,
-.sponser h3 {
-    color: #33C8FF;
-    font-size: 2rem;
+.contact h3 a,
+.sponsor h3, .sponsor h3 a {
+    font-family: "Fredoka", sans-serif;
+    color: #ffffff;
+    font-size: 1.2rem;
     margin: 0;
-    text-decoration: underline;
+    font-weight: 300;
+    text-decoration: none;
 }
 
 @keyframes pulse {
