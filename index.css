@@ -1,3 +1,7 @@
+:root {
+    --accent-color: #2fee2f;
+}
+
 body {
     margin: 0;
     height: 130vh;
@@ -42,11 +46,11 @@ img {
 .date {
     font-family: "Anta", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    /* font-style: normal; */
     text-align: center;
     margin-top: 0;
     margin-bottom: 5px;
-    color: #4d180e;
+    color: var(--accent-color);
     font-size: 2rem;
     text-shadow: 1px 1px 2px rgb(0, 7, 32);
 }
@@ -69,10 +73,9 @@ img {
 .sponsor h1 {
     font-family: "interstate", sans-serif;
     font-style: normal;
-    color: #4d180e;
+    color: var(--accent-color);
     text-decoration: underline;
-        text-shadow: 1px 1px 1px rgb(0, 7, 32);
-    /* text-shadow: 1px 1px 3px #2859b3; */
+    text-shadow: 1px 1px 1px rgb(0, 7, 32);
     font-size: 2rem;
 }
 
