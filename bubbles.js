@@ -5,8 +5,6 @@ class Bubble {
         this.speed = speed
         this.element = element
 
-        console.log(xPos, speed)
-
         this.element.style.left = xPos+speed+'px';
     }
 
