@@ -1,5 +1,13 @@
 :root {
-    --accent-color: #2fee2f;
+    --accent-color: hsl(120, 70%, 20%);
+    --heading-accent: hsl(120, 70%, 40%);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    scroll-snap-stop: always;
+    height: 100%;
 }
 
 body {
@@ -8,7 +16,12 @@ body {
     background-repeat: no-repeat;
     background: linear-gradient(to bottom, #5DE0E6, #004AAD);
     font-family: Biko, sans-serif;
-    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .ocean {
@@ -26,6 +39,7 @@ body {
     margin: 0;
     margin-top: 15px;
     animation: pulse 5s infinite alternate forwards ease-in-out;
+    font-family: "Space Mono";
 }
 
 img {
@@ -44,7 +58,7 @@ img {
 }
 
 .date {
-    font-family: "Anta", sans-serif;
+    font-family: "Fredoka", sans-serif;
     font-weight: 400;
     /* font-style: normal; */
     text-align: center;
@@ -73,9 +87,8 @@ img {
 .sponsor h1 {
     font-family: "interstate", sans-serif;
     font-style: normal;
-    color: var(--accent-color);
+    color: var(--heading-accent);
     text-decoration: underline;
-    text-shadow: 1px 1px 1px rgb(0, 7, 32);
     font-size: 2rem;
 }
 
@@ -94,24 +107,37 @@ img {
 }
 
 .bubble {
-    position: absolute;
+    position: fixed;
     border-radius: 50%;
     aspect-ratio: 1/1;
-    background-color: red;
+    background-color: rgb(38, 0, 255);
     width: 100px;
     left: 50px;
     z-index: -1;
+}
+
+#footer {
+    color: white;
+    width: 100vw;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 0;
+    z-index: 2;
+    font-size: 1.05rem;
+    font-family: "Inter", sans-serif;
+}
+
+#footer a {
+    color: #ceeb3f;
 }
 
 @keyframes pulse {
     0% {
         text-shadow: 1px 1px 5px #a0f4f7, 1px 1px 5px #38bbd2;
     }
-
     50% {
         text-shadow: 1px 1px 15px #a0f4f7, 1px 1px 15px #38bbd2;
     }
-
     100% {
         text-shadow: 1px 1px 5px #a0f4f7, 1px 1px 5px #38bbd2;
     }
