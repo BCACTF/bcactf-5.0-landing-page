@@ -1,6 +1,6 @@
 :root {
-    --accent-color: hsl(120, 70%, 20%);
-    --heading-accent: hsl(120, 70%, 40%);
+    --accent-color: hsl(120, 100%, 15.1%);
+    --heading-accent: hsl(151.9, 57.8%, 50.8%);
 }
 
 html {
@@ -60,7 +60,6 @@ img {
 .date {
     font-family: "Fredoka", sans-serif;
     font-weight: 400;
-    /* font-style: normal; */
     text-align: center;
     margin-top: 0;
     margin-bottom: 5px;
