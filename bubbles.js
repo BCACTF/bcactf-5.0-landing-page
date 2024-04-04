@@ -24,9 +24,10 @@ class Bubble {
     }
 }
 
-let bubblesDiv = document.querySelector(".bubbles")
+const bubblesDiv = document.querySelector(".bubbles")
+const bubblesColors = ["#93dbe9","#689cc5","#5e6fa3","#3b4368","#191d3a","#d9dbee","#b3b7e2"]
 let bubbles = []
-let bubblesColors = ["#93dbe9","#689cc5","#5e6fa3","#3b4368","#191d3a","#d9dbee","#b3b7e2"]
+let bubbleLoop;
 
 function createBubble() {
     let div = document.createElement("div")
@@ -44,7 +45,8 @@ function createBubbles() {
     let bubble = new Bubble(Math.floor(Math.random() * window.innerWidth), Math.random()+.5, createBubble())
     bubbles.push(bubble)
 
-    setTimeout(createBubbles, Math.random()*1000)
+    if (!document.hidden)
+        setTimeout(createBubbles, Math.random()*800)
 }
 
 function updateBubbles() {
@@ -54,4 +56,14 @@ function updateBubbles() {
 }
 
 createBubbles()
-setInterval(updateBubbles, 10)
+bubbleLoop = setInterval(updateBubbles, 10);
+
+document.addEventListener('visibilitychange', ()=>{
+    if (document.hidden) {
+        clearInterval(bubbleLoop);
+    } else {
+        setTimeout(createBubbles, Math.random() * 1000)
+        bubbleLoop = setInterval(updateBubbles, 10);
+    }
+});
+
