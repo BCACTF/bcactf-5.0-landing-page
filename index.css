@@ -111,18 +111,17 @@ img {
 .dual-col {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: first baseline;
-    margin: 0;
-    width: 50%;
+    margin: 0 auto;
+    width: 40vw;
 }
 
 .contact,
 .sponsor {
     text-align: center;
     margin: 0;
-    width: auto;
-    max-width: 20vw;
+    width: max-content;
 }
 
 .contact h1,
