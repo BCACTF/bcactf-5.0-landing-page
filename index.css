@@ -1,6 +1,7 @@
 :root {
-    --accent-color: hsl(120, 100%, 15.1%);
-    --heading-accent: hsl(151.9, 57.8%, 50.8%);
+    --accent-color: hsl(44.4, 84.4%, 59.8%);
+     /* hsl(120, 100%, 15.1%); */
+    --heading-accent: hsl(44.4, 84.4%, 59.8%);
 }
 
 html {
@@ -12,7 +13,7 @@ html {
 
 body {
     margin: 0;
-    height: 130vh;
+    height: 120vh;
     background-repeat: no-repeat;
     background: linear-gradient(to bottom, #5DE0E6, #004AAD);
     font-family: Biko, sans-serif;
@@ -25,7 +26,7 @@ body {
 }
 
 .ocean {
-    height: 130vh;
+    height: 120vh;
     width: 100vw;
     background: linear-gradient(to bottom right, #00000070, #00000000);
     z-index: -1;
@@ -33,17 +34,16 @@ body {
 }
 
 .bubble-text {
-    font-size: 5em;
+    font-size: 4rem;
     color: #a0f4f7;
     text-align: center;
     margin: 0;
-    margin-top: 15px;
     animation: pulse 5s infinite alternate forwards ease-in-out;
-    font-family: "Space Mono";
+    font-family: "Space Mono", monospace;
 }
 
 img {
-    width: 20vw;
+    width: 18vw;
     margin: auto 0;
     display: block;
     padding-left: 2vw;
@@ -64,12 +64,13 @@ img {
     margin-top: 0;
     margin-bottom: 5px;
     color: var(--accent-color);
-    font-size: 2rem;
+    font-size: 1.75rem;
     text-shadow: 1px 1px 2px rgb(0, 7, 32);
 }
 
 .timer {
     color: #cef1ec;
+    font-size: 1.2rem;
 }
 
 .grid {
@@ -84,10 +85,10 @@ img {
 
 .contact h1,
 .sponsor h1 {
-    font-family: "interstate", sans-serif;
+    font-family: "Space Mono", sans-serif;
     font-style: normal;
+    text-transform: uppercase;
     color: var(--heading-accent);
-    text-decoration: underline;
     font-size: 2rem;
 }
 
