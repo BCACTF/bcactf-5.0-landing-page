@@ -211,3 +211,54 @@ img {
         text-shadow: 1px 1px 5px #a0f4f7, 1px 1px 5px #38bbd2;
     }
 }
+
+@media (max-width: 768px) {
+    .bubble-text {
+        font-size: 3rem;
+    }
+
+    img {
+        width: 30vw;
+    }
+
+    .date {
+        font-size: 1.5rem;
+    }
+
+    #timer {
+        width: 60vw;
+    }
+
+    .time-info {
+        font-size: 1rem;
+    }
+
+    #timer-values {
+        font-size: 3rem;
+    }
+
+    #timer-labels {
+        font-size: 1rem;
+    }
+
+    .dual-col {
+        width: 95vw;
+    }
+
+    .contact,
+    .sponsor {
+        font-size: 1rem;
+    }
+
+    #footer {
+        font-size: 1rem;
+    }
+
+    #links {
+        width: 40vw;
+    }
+
+    #links a {
+        font-size: 1.5rem;
+    }
+}
