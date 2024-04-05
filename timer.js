@@ -1,6 +1,6 @@
 const timerElement = document.getElementById("timer");
-const ctfTime = 1717804800000; // Sat 7 June 2024 8 PM EST
-const ctfEndTime = 1718064000000;
+const ctfTime =    1717790400000; // Sat 7 June 2024 4 PM EST
+const ctfEndTime = 1718049600000;
 let interval;
 let showSeconds = window.innerWidth > 801;
 
@@ -16,12 +16,21 @@ function formatTime(timeStr) {
     let m = Math.floor(timeStr % 3600 / 60);
     let s = Math.floor(timeStr % 60);
 
-    let dDisplay = String(Math.abs(d)).padStart(2, '0') + "<label> Days</label><span class='blue'>,</span> ";
-    let hDisplay = String(Math.abs(h)).padStart(2, '0') + "<label> Hours</label><span class='blue'>,</span> ";
-    let mDisplay = String(Math.abs(m)).padStart(2, '0') + "<label> Minutes</label>";
-    let sDisplay = "<span class='blue'>, and </span>" + String(Math.abs(s)).padStart(2, '0') + "<label> Seconds</label></span>";
+    let dDisplay = "<span class='val'>" + String(Math.abs(d)).padStart(2, '0') + "</span> ";
+    let hDisplay = "<span class='val'>" + String(Math.abs(h)).padStart(2, '0') + "</span> ";
+    let mDisplay = "<span class='val'>" + String(Math.abs(m)).padStart(2, '0') + "</span> ";
+    let sDisplay = "<span class='val'>" + String(Math.abs(s)).padStart(2, '0') + "</span> ";
 
-    return label + dDisplay + hDisplay + mDisplay + (showSeconds ? sDisplay : "");
+    return label + 
+        `<div id='timer-values'>` +
+        dDisplay + 
+        hDisplay + 
+        mDisplay + 
+        (showSeconds ? sDisplay : "") +
+        `</div><div id='timer-labels'>
+            <label> Days</label><label> Hours</label><label> Minutes</label>` +
+        (showSeconds ? "<label> Seconds</label>" : "") +
+        "</div>";
 }
 
 if (Date.now() >= ctfEndTime) {
