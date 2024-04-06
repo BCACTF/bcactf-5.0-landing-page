@@ -15,7 +15,7 @@ body {
     height: 120vh;
     box-sizing: border-box;
     background-repeat: no-repeat;
-    background: linear-gradient(to bottom, #5DE0E6, #004AAD);
+    background: linear-gradient(to bottom, #20c3f5, #004AAD);
     font-family: "Inter", sans-serif;
     background-size: cover;
     background-attachment: fixed;
@@ -36,10 +36,10 @@ body {
 
 .bubble-text {
     font-size: 4rem;
-    color: #a0f4f7;
+    color: #43e9ef;
     text-align: center;
     margin: 0;
-    animation: pulse 5s infinite alternate forwards ease-in-out;
+    animation: pulse 10s infinite alternate forwards ease-in-out;
     font-family: "Space Mono", monospace;
 }
 /* 
@@ -59,12 +59,12 @@ img {
 }
 
 .date {
-    font-family: "Fredoka", sans-serif;
-    font-weight: 400;
+    font-family: "interstate", sans-serif;
+    font-weight: bold;
     text-align: center;
-    margin: 0.5rem 0 2rem 0;
+    margin: 0.5rem 0 1rem 0;
     color: var(--accent-color);
-    font-size: 1.95rem;
+    font-size: 2.2rem;
     text-shadow: 1px 1px 2px rgb(0, 7, 32);
 }
 
@@ -74,7 +74,7 @@ img {
 }
 
 .time-info {
-    font-family: "Fredoka", sans-serif;
+    font-family: "interstate", sans-serif;
     font-size: 1.1rem;
     color: #ffffff;
     text-transform: uppercase;
@@ -84,9 +84,10 @@ img {
 #timer-values {
     display: flex;
     justify-content: space-around;
+    margin: 0 0.25rem;
     align-items: center;
     font-size: 4rem;
-    font-family: "Oswald", sans-serif;
+    font-family: Helvetica, sans-serif;
     text-align: center;
 }
 
@@ -100,7 +101,7 @@ img {
     margin-top: 0;
     margin-bottom: 0;
     align-items: center;
-    font-family: "Fredoka", sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 1.2rem;
     text-align: center;
 }
@@ -204,13 +205,13 @@ img {
 
 @keyframes pulse {
     0% {
-        text-shadow: 1px 1px 5px #a0f4f7, 1px 1px 5px #38bbd2;
+        text-shadow: 1px 1px 3px #43e9ef, 1px 1px 3px #38bbd2;
     }
     50% {
-        text-shadow: 1px 1px 12px #a0f4f7, 1px 1px 12px #38bbd2;
+        text-shadow: 1px 1px 7px #43e9ef, 1px 1px 7px #38bbd2;
     }
     100% {
-        text-shadow: 1px 1px 5px #a0f4f7, 1px 1px 5px #38bbd2;
+        text-shadow: 1px 1px 2px #43e9ef, 1px 1px 2px #38bbd2;
     }
 }
 
