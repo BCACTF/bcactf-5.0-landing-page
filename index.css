@@ -125,7 +125,7 @@ img {
 .dual-col {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: first baseline;
     margin: 0 auto;
     width: 40vw;
