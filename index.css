@@ -46,6 +46,10 @@ body {
     position: fixed;
 }
 
+.sponsorimg {
+    width: auto;
+}
+
 .bubble-text {
     font-size: 4rem;
     color: #43e9ef;
