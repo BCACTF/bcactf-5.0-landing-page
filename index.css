@@ -8,30 +8,42 @@ html {
     scroll-snap-type: mandatory;
     scroll-snap-stop: always;
     height: 100%;
+    background-color: #0a213f;
 }
 
 body {
+    min-height: 100%;
     margin: 0;
-    height: 120vh;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+
     background-repeat: no-repeat;
     background: linear-gradient(to bottom, #20c3f5, #004AAD);
-    font-family: "Inter", sans-serif;
     background-size: cover;
     background-attachment: fixed;
+
+}
+
+.app {
+    position: absolute;
+    height: 100%;
+    overflow-y: scroll;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+
+    z-index: 1;
 }
 
+
 .ocean {
-    height: 125%;
+    height: 105%;
     box-sizing: border-box;
     width: 100vw;
     background: linear-gradient(to bottom right, #00000070, #00000000);
-    z-index: -1;
-    position: absolute;
+    z-index: -2;
+    position: fixed;
 }
 
 .bubble-text {
@@ -157,7 +169,6 @@ img {
     background-color: rgb(38, 0, 255);
     width: 100px;
     left: 50px;
-    z-index: -1;
 }
 
 #footer {

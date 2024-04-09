@@ -5,6 +5,8 @@ class Bubble {
         this.speed = speed
         this.element = element
 
+        this.element.style.zIndex = speed > 1 ? "1" : "0";
+
         this.element.style.left = xPos+speed+'px';
     }
 
@@ -42,7 +44,7 @@ function createBubble() {
 }
 
 function createBubbles() {
-    let bubble = new Bubble(Math.floor(Math.random() * window.innerWidth), Math.random()+.5, createBubble())
+    let bubble = new Bubble(Math.floor(Math.random() * (window.innerWidth - 40)) + 20, Math.random()+.5, createBubble())
     bubbles.push(bubble)
 
     if (!document.hidden)
