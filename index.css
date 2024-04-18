@@ -218,6 +218,10 @@ img {
     font-size: 2rem;
 }
 
+.sponsorimg {
+   margin-bottom: 20px;
+}
+
 @keyframes pulse {
     0% {
         text-shadow: 1px 1px 3px #43e9ef, 1px 1px 3px #38bbd2;
