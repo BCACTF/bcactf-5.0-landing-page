@@ -46,7 +46,7 @@ body {
     position: fixed;
 }
 
-.sponsorimg {
+.sponsor-img {
     width: auto;
 }
 
@@ -218,8 +218,8 @@ img {
     font-size: 2rem;
 }
 
-.sponsorimg {
-   margin-bottom: 20px;
+.sponsor-img {
+   margin: 0 20px 20px 20px;
 }
 
 @keyframes pulse {
