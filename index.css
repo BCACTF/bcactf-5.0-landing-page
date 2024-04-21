@@ -283,4 +283,9 @@ img {
     #links a {
         font-size: 1.5rem;
     }
+
+    .sponsor-img {
+        display: block;
+        margin: 20px auto;
+    }
 }
